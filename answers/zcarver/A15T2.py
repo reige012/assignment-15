@@ -10,7 +10,7 @@ Takes user input and calculates weekend days between now and the end of the yr.
 from datetime import date, timedelta
 
 
-def weekend_days(now, then):
+def weekends(now, then):
     #quite minimalist way of calculating the weekends. Derived from:
     #archugs.blogspot.com/2014/08/calculating-number-of-working-days.html
     return sum([1 for delt in xrange(1, (then - now).days+1)
