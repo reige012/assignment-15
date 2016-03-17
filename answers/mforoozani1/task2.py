@@ -9,6 +9,10 @@ import numpy as np
 
 
 def weekend_day():
+    """
+use datetime.datetime to get the start and end time. use np.busday_count to
+calculate busniess day and then weekend days
+    """
     today = datetime.date(2016, 3, 16)
     end_2016 = datetime.date(2016, 12, 31)
     end_day_included = datetime.date(2017, 1, 1)

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-created by me for task1 to open and read these chapters and some other code to
-get a list of all words in each chapter
+created by me for task1 to write a program that iterates over the lines of the
+two files in the task-1 directory
 """
 from itertools import zip_longest
 import argparse
@@ -23,6 +23,10 @@ def get_parser():
 
 
 def iterate_overlines(inputfile1, inputfile2):
+    """
+use zip_longest in python 3 or izip in python 2 to print items in two arguments
+at the same time
+    """
     for line_file_1, line_file_2 in zip_longest(inputfile1, inputfile2):
         print(line_file_1, line_file_2)
 
