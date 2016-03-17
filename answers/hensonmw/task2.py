@@ -12,6 +12,9 @@ import datetime
 
 
 def weekends(date1, date2):
+    '''
+    http://stackoverflow.com/questions/3615375/python-count-days-ignoring-weekends
+    '''
     weekenddays = 0
     delta = datetime.timedelta(days=1)
     while date2 != date1:
